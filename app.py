@@ -1,4 +1,4 @@
-
+import os
 #variaveis global
 lista_compras = []
 produto_id = 1
@@ -92,6 +92,7 @@ def exibir_menu():
 
 def escolher_menu():
     while True:
+        os.system('cls')
         mostrar_produto()
         exibir_menu()
         opcao = input("Escolha uma opção: ").upper()
@@ -110,4 +111,4 @@ def escolher_menu():
         else: 
             print("Opção invalida")
 
-
+escolher_menu()
